@@ -13,6 +13,7 @@ int ft_putstring(char *str){ //по аналогии системный выво
 		ft_putchar(str[i]);
 		i++;
 	}
+	ft_putchar('\n');
 	return 0;
 }
 int main(int argc, char **argv) { // **argv -указатель на двумерный массив

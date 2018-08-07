@@ -36,7 +36,7 @@ int ft_putstring(char *str){
 			i++;
 		}
 	}
-	
+	ft_putchar('\n');
 	return 0;
 }
 int main(int argc,char **argv){ //, параметр argc=кол-ву пар-в ком.строки+1
