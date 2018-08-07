@@ -1,13 +1,16 @@
-#include <stdio.h>
- /*Вывести алфавит реверсивно, нечетные буквы на верхний регистр */
-int main() {
-    int i;
-    for (i=122;i>=97;i--) {
-		if (i % 2 == 0)
-			printf("%c",i); // Алфавит через табл ASCII	
-		else 
-			printf("%c", i-32); //Верхний регистр от нижнего отличается на 32 в табл ASCII
-    }
-    printf("\n");
+ #include <unistd.h>
+
+int ft_putchar(char c)
+{
+  write(1, &c, 1); //(1-дискриптор вывода, %c откуда, 1 - сколько байт)
+  return (0);
+}
+int main () {
+	char i;
+	for (i=122;i>=97;i=i-2) {
+		ft_putchar(i);
+		ft_putchar(i-33);
+	}
+	
 	return 0;
 }
